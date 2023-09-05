@@ -62,3 +62,19 @@ ALTER TABLE ONLY crowdfunding.campaign
 
 ALTER TABLE ONLY crowdfunding.campaign
     ADD CONSTRAINT fk_campaign_subcategory_id FOREIGN KEY (subcategory_id) REFERENCES crowdfunding.subcategory(subcategory_id);
+
+
+-- Import data into the tables
+
+COPY crowdfunding.contacts FROM 'Resources/contacts.csv' WITH CSV HEADER;
+
+COPY crowdfunding.category FROM 'Resources/category.csv' WITH CSV HEADER;
+
+COPY crowdfunding.subcategory FROM 'Resources/subcategory.csv' WITH CSV HEADER;
+
+COPY crowdfunding.campaign FROM 'Resources/campaign.csv' WITH CSV HEADER;
+
+
+
+
+
