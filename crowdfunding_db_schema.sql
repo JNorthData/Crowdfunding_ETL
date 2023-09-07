@@ -6,38 +6,38 @@ CREATE SCHEMA crowdfunding;
 CREATE TABLE crowdfunding.campaign (
     cf_id integer NOT NULL,
     contact_id integer,
-    company_name character varying(60),
-    description character varying(100),
+    company_name varchar(60),
+    description varchar(100),
     goal double precision,
     pledged double precision,
-    outcome character varying(20),
+    outcome varchar(20),
     backers_count integer,
-    country character(2),
-    currency character(3),
+    country character(10),
+    currency character(10),
     launch_date date,
     end_date date,
-    category_id character varying(7),
-    subcategory_id character varying(10)
+    category_id varchar(10),
+    subcategory_id varchar(10)
 );
 
 
 CREATE TABLE crowdfunding.category (
-    category_id character varying(7) NOT NULL,
-    category character varying(40)
+    category_id varchar(10) NOT NULL,
+    category varchar(40)
 );
 
 
 CREATE TABLE crowdfunding.contacts (
     contact_id integer NOT NULL,
-    first_name character varying(20),
-    last_name character varying(20),
-    email character varying(60)
+    first_name varchar(20),
+    last_name varchar(20),
+    email varchar(60)
 );
 
 
 CREATE TABLE crowdfunding.subcategory (
-    subcategory_id character varying(10) NOT NULL,
-    subcategory character varying(40)
+    subcategory_id varchar(10) NOT NULL,
+    subcategory varchar(40)
 );
 
 
