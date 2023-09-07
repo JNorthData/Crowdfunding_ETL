@@ -19,4 +19,8 @@ Our cleaned data was used to create 4 tables, which we stored as .csv files in t
     - category
     - subcategory
 
-The SQL code for creating a database schema for these tables is in a .sql file 'crowdfunding_db_schema.sql'
+The SQL code for creating a database schema for these tables,
+including queries for importing table data from .csv files, is in a file:
+
+    'crowdfunding_db_schema.sql'
+
