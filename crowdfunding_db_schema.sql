@@ -66,15 +66,10 @@ ALTER TABLE ONLY crowdfunding.campaign
 
 -- Import data into the tables
 
-COPY crowdfunding.contacts FROM 'Resources/contacts.csv' WITH CSV HEADER;
+COPY crowdfunding.contacts FROM '/tmp/Resources/contacts.csv' WITH CSV HEADER;
 
-COPY crowdfunding.category FROM 'Resources/category.csv' WITH CSV HEADER;
+COPY crowdfunding.category FROM '/tmp/Resources/category.csv' WITH CSV HEADER;
 
-COPY crowdfunding.subcategory FROM 'Resources/subcategory.csv' WITH CSV HEADER;
+COPY crowdfunding.subcategory FROM '/tmp/Resources/subcategory.csv' WITH CSV HEADER;
 
-COPY crowdfunding.campaign FROM 'Resources/campaign.csv' WITH CSV HEADER;
-
-
-
-
-
+COPY crowdfunding.campaign FROM '/tmp/Resources/campaign.csv' WITH CSV HEADER;
